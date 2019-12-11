@@ -31,11 +31,11 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
 
-app.get('/persons', (req, res) => {
+app.get('/api/persons', (req, res) => {
   res.json(persons)
 })
 
-app.get('/persons/:id', (request, response) => {
+app.get('/api/persons/:id', (request, response) => {
   const id = Number(request.params.id)
   const person = persons.find(person => person.id === id)
 
@@ -46,7 +46,7 @@ app.get('/persons/:id', (request, response) => {
   }
 })
 
-app.delete('/persons/:id', (request, response) => {
+app.delete('/api/persons/:id', (request, response) => {
   const id = Number(request.params.id)
   persons = persons.filter(person => person.id !== id)
 
@@ -60,7 +60,7 @@ const generateId = () => {
   return maxId + 1
 }
 
-app.post('/persons', (request, response) => {
+app.post('/api/persons', (request, response) => {
   const body = request.body
 
   if (!body.content) {
