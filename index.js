@@ -68,10 +68,14 @@ const generateId = () => {
   return maxId + 1
 }
 
+const generateRandomId = () => {
+  return Math.floor(Math.random() * Math.floor(9999));
+}
+
 app.post('/api/persons', (request, response) => {
   const body = request.body
 
-  if (!body.content) {
+  if (!body.name) {
     return response.status(400).json({
       error: 'content missing'
     })
@@ -79,9 +83,9 @@ app.post('/api/persons', (request, response) => {
 
   const person = {
     content: body.content,
-    important: body.important || false,
-    date: new Date(),
-    id: generateId(),
+    name: body.name || false,
+    number: body.number || false,
+    id: generateRandomId(),
   }
 
   persons = persons.concat(person)
