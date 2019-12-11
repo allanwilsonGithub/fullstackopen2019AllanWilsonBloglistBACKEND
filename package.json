@@ -1,0 +1,27 @@
+{
+  "name": "fullstackopen2019allanwilsonbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanwilsonGithub/fullstackopen2019AllanWilsonBACKEND.git"
+  },
+  "author": "Allan Wilson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/allanwilsonGithub/fullstackopen2019AllanWilsonBACKEND/issues"
+  },
+  "homepage": "https://github.com/allanwilsonGithub/fullstackopen2019AllanWilsonBACKEND#readme"
+}
