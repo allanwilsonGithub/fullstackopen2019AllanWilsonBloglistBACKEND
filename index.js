@@ -11,43 +11,35 @@ app.use(express.static('build'))
 app.use(bodyParser.json())
 app.use(morgan('tiny'))
 
-//TODO
-app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+app.get('/', (request, response) => {
+  response.send('<h1>Hello World!</h1>')
 })
 
-//TODO
-app.get('/info', (req, res) => {
-  const test = 1
-  res.send(`
-  <p>Phonebook has info for ${persons.length} people</p>
+app.get('/info', (request, response) => {
+  Person.find({}).then(person => {response.send(`
+  <p>Phonebook has info for ${person.length} people</p>
   <p>${Date()}</p>
   `)
-})
+})})
 
-//DONE
 app.get('/api/persons/', (request, response) => {
   Person.find({}).then(person => {
     response.json(person)
   })
 })
 
-//DONE
 app.get('/api/persons/:id', (request, response) => {
   Person.findById(request.params.id).then(person => {
     response.json(person)
   })
 })
 
-//TODO
 app.delete('/api/persons/:id', (request, response) => {
-  const id = Number(request.params.id)
-  persons = persons.filter(person => person.id !== id)
-
-  response.status(204).end()
+  Person.findById(request.params.id).then(person => {
+    person.deleteOne()
+  }).then(response.status(204).end())
 })
 
-//DONE
 app.post('/api/persons', (request, response) => {
   const body = request.body
 
@@ -59,13 +51,6 @@ app.post('/api/persons', (request, response) => {
     return response.status(400).json({
           error: 'number missing'
     })}
-    /*
-    TODO
-    else if (persons.find(person => person.name === body.name)) {
-    return response.status(400).json({
-          error: 'name already exists'
-    })}
-    */
 
   const person = new Person ({
     content: body.content,
