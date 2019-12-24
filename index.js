@@ -3,39 +3,20 @@ const app = express()
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cors = require('cors')
+const mongoose = require('mongoose')
+const Person = require('./models/personDb')
 
 app.use(cors())
 app.use(express.static('build'))
-
 app.use(bodyParser.json())
 app.use(morgan('tiny'))
-let persons = [
-    {
-      "name": "Arto Hellas",
-      "number": "040-123456",
-      "id": 1
-    },
-    {
-      "name": "Ada Lovelace",
-      "number": "39-44-5323523",
-      "id": 2
-    },
-    {
-      "name": "Dan Abramov",
-      "number": "12-43-234345",
-      "id": 3
-    },
-    {
-      "name": "Mary Poppendieck",
-      "number": "39-23-6423122",
-      "id": 4
-    }
-]
 
+TODO
 app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
 
+TODO
 app.get('/info', (req, res) => {
   const test = 1
   res.send(`
@@ -44,21 +25,22 @@ app.get('/info', (req, res) => {
   `)
 })
 
-app.get('/api/persons', (req, res) => {
-  res.json(persons)
-})
-
-app.get('/api/persons/:id', (request, response) => {
-  const id = Number(request.params.id)
-  const person = persons.find(person => person.id === id)
-
-  if (person) {
+TODO
+app.get('/api/persons/', (request, response) => {
+  Person.findById(request.params.id).then(person => {
     response.json(person)
-  } else {
-    response.status(404).end()
-  }
+  })
 })
 
+
+DONE
+app.get('/api/persons/:id', (request, response) => {
+  Person.findById(request.params.id).then(person => {
+    response.json(person)
+  })
+})
+
+TODO
 app.delete('/api/persons/:id', (request, response) => {
   const id = Number(request.params.id)
   persons = persons.filter(person => person.id !== id)
@@ -66,17 +48,7 @@ app.delete('/api/persons/:id', (request, response) => {
   response.status(204).end()
 })
 
-const generateId = () => {
-  const maxId = persons.length > 0
-    ? Math.max(...persons.map(n => n.id))
-    : 0
-  return maxId + 1
-}
-
-const generateRandomId = () => {
-  return Math.floor(Math.random() * Math.floor(9999));
-}
-
+TODO : might work already. Test with Postman
 app.post('/api/persons', (request, response) => {
   const body = request.body
 
@@ -93,16 +65,15 @@ app.post('/api/persons', (request, response) => {
           error: 'name already exists'
     })}
 
-  const person = {
+  const person = new Person ({
     content: body.content,
     name: body.name || false,
-    number: body.number || false,
-    id: generateRandomId(),
-  }
+    number: body.number || false
+  })
 
-  persons = persons.concat(person)
-
-  response.json(person)
+  person.save().then(savedPerson => {
+    response.json(savedPerson.toJSON())
+  })
 })
 
 
