@@ -11,12 +11,12 @@ app.use(express.static('build'))
 app.use(bodyParser.json())
 app.use(morgan('tiny'))
 
-TODO
+//TODO
 app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
 
-TODO
+//TODO
 app.get('/info', (req, res) => {
   const test = 1
   res.send(`
@@ -25,22 +25,21 @@ app.get('/info', (req, res) => {
   `)
 })
 
-TODO
+//DONE
 app.get('/api/persons/', (request, response) => {
-  Person.findById(request.params.id).then(person => {
+  Person.find({}).then(person => {
     response.json(person)
   })
 })
 
-
-DONE
+//DONE
 app.get('/api/persons/:id', (request, response) => {
   Person.findById(request.params.id).then(person => {
     response.json(person)
   })
 })
 
-TODO
+//TODO
 app.delete('/api/persons/:id', (request, response) => {
   const id = Number(request.params.id)
   persons = persons.filter(person => person.id !== id)
@@ -48,7 +47,7 @@ app.delete('/api/persons/:id', (request, response) => {
   response.status(204).end()
 })
 
-TODO : might work already. Test with Postman
+//DONE
 app.post('/api/persons', (request, response) => {
   const body = request.body
 
@@ -60,10 +59,13 @@ app.post('/api/persons', (request, response) => {
     return response.status(400).json({
           error: 'number missing'
     })}
+    /*
+    TODO
     else if (persons.find(person => person.name === body.name)) {
     return response.status(400).json({
           error: 'name already exists'
     })}
+    */
 
   const person = new Person ({
     content: body.content,
