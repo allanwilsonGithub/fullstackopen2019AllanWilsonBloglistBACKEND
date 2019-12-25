@@ -10,5 +10,13 @@ https://git.heroku.com/blooming-crag-52195.git
 
 MongoDB
 user: fullstack
-pass: allu2020
-mongodb+srv://fullstack:allu2020!@cluster0-6rmsl.mongodb.net/test?retryWrites=true&w=majority
+pass: a!
+mongodb+srv://fullstack:<password>@cluster0-6rmsl.mongodb.net/test?retryWrites=true&w=majority
+
+-- To build the UI
+
+npm run build:ui
+
+-- To run backend and UI (localhost:3001)
+
+npm run watch
