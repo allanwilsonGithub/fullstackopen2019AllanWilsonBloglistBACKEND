@@ -3,7 +3,6 @@ const app = express()
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cors = require('cors')
-const mongoose = require('mongoose')
 const Person = require('./models/personDb')
 
 app.use(cors())
@@ -22,7 +21,7 @@ app.get('/info', (request, response) => {
   <p>Phonebook has info for ${person.length} people</p>
   <p>${Date()}</p>
   `)
-})})
+  })})
 
 app.get('/api/persons/', (request, response) => {
   Person.find({}).then(person => {
@@ -40,7 +39,7 @@ app.get('/api/persons/:id', (request, response, next) => {
       }
     })
     .catch(error => next(error))
-  })
+})
 
 app.delete('/api/persons/:id', (request, response) => {
   Person.findById(request.params.id).then(person => {
@@ -53,11 +52,11 @@ app.post('/api/persons', (request, response, next) => {
 
   if (!body.name) {
     return response.status(400).json({
-          error: 'name missing'
+      error: 'name missing'
     })}
-    else if (!body.number) {
+  else if (!body.number) {
     return response.status(400).json({
-          error: 'number missing'
+      error: 'number missing'
     })}
 
   const person = new Person ({
@@ -69,7 +68,7 @@ app.post('/api/persons', (request, response, next) => {
   person.save().then(savedPerson => {
     response.json(savedPerson.toJSON())
   })
-  .catch(error => next(error))
+    .catch(error => next(error))
 })
 
 const errorHandler = (error, request, response, next) => {
