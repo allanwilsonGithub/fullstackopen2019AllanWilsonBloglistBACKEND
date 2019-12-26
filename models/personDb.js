@@ -5,7 +5,8 @@ const url = process.env.MONGODB_URI
 
 console.log('connecting to', url)
 
-mongoose.connect(url, { useNewUrlParser: true })
+mongoose.set('useCreateIndex', true);
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result => {
     console.log('connected to MongoDB')
   })
@@ -18,7 +19,7 @@ const personSchema = new mongoose.Schema({
   number: Number
 })
 
-personSchema.plugin(uniqueValidator, { message: 'Error, expected {PATH} to be unique.' })
+personSchema.plugin(uniqueValidator, { type: 'mongoose-unique-validator' });
 
 personSchema.set('toJSON', {
   transform: (document, returnedObject) => {

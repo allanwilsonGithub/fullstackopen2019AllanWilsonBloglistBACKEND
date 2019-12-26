@@ -42,23 +42,13 @@ app.get('/api/persons/:id', (request, response, next) => {
     .catch(error => next(error))
   })
 
-const errorHandler = (error, request, response, next) => {
-  console.error(error.message)
-
-  if (error.name === 'CastError' && error.kind === 'ObjectId') {
-    return response.status(400).send({ error: 'malformatted id' })
-  }
-
-  next(error)
-}
-
 app.delete('/api/persons/:id', (request, response) => {
   Person.findById(request.params.id).then(person => {
     person.deleteOne()
   }).then(response.status(204).end())
 })
 
-app.post('/api/persons', (request, response) => {
+app.post('/api/persons', (request, response, next) => {
   const body = request.body
 
   if (!body.name) {
@@ -79,7 +69,19 @@ app.post('/api/persons', (request, response) => {
   person.save().then(savedPerson => {
     response.json(savedPerson.toJSON())
   })
+  .catch(error => next(error))
 })
+
+const errorHandler = (error, request, response, next) => {
+  console.error(error.message)
+
+  if (error.name === 'ValidationError') {
+    return response.status(404).send({ error: 'Validation error: Duplicate in database' })
+  } else if (error.name === 'CastError') {
+    return response.status(400).send({ error: 'malformatted id' })
+  }
+  next(error)
+}
 
 app.use(errorHandler)
 
