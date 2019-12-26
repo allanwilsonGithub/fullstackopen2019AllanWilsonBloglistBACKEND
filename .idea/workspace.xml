@@ -1,8 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4688caab-5879-446e-8a66-169990dffa1e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/notes/playground/part2-notes-part2-6/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part2/phoneBook/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part2/phoneBook/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part2/phoneBook/src/services/persons.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part2/phoneBook/src/services/persons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fullstackopen2019AllanWilsonBACKEND.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstackopen2019AllanWilsonBACKEND.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../fullstackopen2019AllanWilson" />
+  </component>
   <component name="ProjectId" id="1UpJwHsXJoOLyFL0OzqpCH5mj4D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fullstackopen2019AllanWilson" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4688caab-5879-446e-8a66-169990dffa1e" name="Default Changelist" comment="" />
+      <created>1577395353146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577395353146</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="611" y="220" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577396118048">
+      <screen x="57" y="27" width="1543" height="873" />
+    </state>
+    <state x="611" y="220" width="424" height="484" key="FileChooserDialogImpl/57.27.1543.873@57.27.1543.873" timestamp="1577396118048" />
+    <state x="317" y="97" key="SettingsEditor" timestamp="1577395371312">
+      <screen x="57" y="27" width="1543" height="873" />
+    </state>
+    <state x="317" y="97" key="SettingsEditor/57.27.1543.873@57.27.1543.873" timestamp="1577395371312" />
   </component>
 </project>
