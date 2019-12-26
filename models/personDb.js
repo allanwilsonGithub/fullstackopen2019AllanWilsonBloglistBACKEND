@@ -14,11 +14,11 @@ mongoose.connect(url, { useNewUrlParser: true })
   })
 
 const personSchema = new mongoose.Schema({
-  name: String,
+  name: { type: String, required: true, unique: true },
   number: Number
 })
 
-personSchema.plugin(uniqueValidator)
+personSchema.plugin(uniqueValidator, { message: 'Error, expected {PATH} to be unique.' })
 
 personSchema.set('toJSON', {
   transform: (document, returnedObject) => {
