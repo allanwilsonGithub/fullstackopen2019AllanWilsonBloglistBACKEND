@@ -11,6 +11,14 @@
       <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/phonebook/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/phonebook/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.0be7e36139df7247cb07494a4013ee34.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.650b65c4.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.650b65c4.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../fullstackopen2019AllanWilson" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UpJwHsXJoOLyFL0OzqpCH5mj4D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
