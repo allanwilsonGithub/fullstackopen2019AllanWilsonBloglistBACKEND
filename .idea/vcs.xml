@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND" vcs="Git" />
   </component>
 </project>

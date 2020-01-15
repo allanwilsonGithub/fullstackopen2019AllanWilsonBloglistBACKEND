@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../fullstackopen2019AllanWilson/.idea/fullstackopen2019AllanWilson.iml" filepath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/.idea/fullstackopen2019AllanWilson.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fullstackopen2019AllanWilsonBACKEND.iml" filepath="$PROJECT_DIR$/.idea/fullstackopen2019AllanWilsonBACKEND.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND/.idea/fullstackopen2019AllanWilsonBloglistBACKEND.iml" filepath="$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND/.idea/fullstackopen2019AllanWilsonBloglistBACKEND.iml" />
     </modules>
   </component>
 </project>

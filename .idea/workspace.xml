@@ -11,14 +11,11 @@
       <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/backend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/phonebook/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part3/phonebook/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fullstackopen2019AllanWilsonBACKEND.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstackopen2019AllanWilsonBACKEND.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.0be7e36139df7247cb07494a4013ee34.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.650b65c4.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.650b65c4.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND" />
   </component>
   <component name="ProjectId" id="1UpJwHsXJoOLyFL0OzqpCH5mj4D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,15 +35,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fullstackopen2019AllanWilsonBloglistBACKEND" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part4" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../fullstackopen2019AllanWilson" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part4/bloglist/src" />
+      <recent name="$PROJECT_DIR$/../fullstackopen2019AllanWilson/part4" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -75,9 +73,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="611" y="220" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577396118048">
-      <screen x="57" y="27" width="1543" height="873" />
+    <state x="2289" y="239" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579122611673">
+      <screen x="1600" y="0" width="1920" height="1080" />
     </state>
+    <state x="2289" y="239" key="FileChooserDialogImpl/57.27.1543.873/1600.0.1920.1080@1600.0.1920.1080" timestamp="1579122611673" />
     <state x="611" y="220" width="424" height="484" key="FileChooserDialogImpl/57.27.1543.873@57.27.1543.873" timestamp="1577396118048" />
     <state x="317" y="97" key="SettingsEditor" timestamp="1577395371312">
       <screen x="57" y="27" width="1543" height="873" />
