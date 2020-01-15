@@ -15,7 +15,8 @@ mongodb+srv://fullstack:<password>@cluster0-6rmsl.mongodb.net/test?retryWrites=t
 
 -- To build the UI
 
-npm run build:ui
+npm run build:phonebookUI
+npm run build:blogListUI
 
 -- To run backend and UI (localhost:3001)
 
